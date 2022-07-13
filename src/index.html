@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        box-sizing: border-box;
+        min-height: 100vh;
+      }
+    </style>
+
+    <title>Cursor homework 14</title>
+  </head>
+  <body>
+    <div>
+      <div class="keyboard">
+        <div id="KeyA" class="key">
+          <audio src="audio/clap.wav"></audio>
+          <p class="text">
+            <span class="text__key">a</span>
+            <span class="text__sound">Clap</span>
+          </p>
+        </div>
+        <div id="KeyS" class="key">
+          <audio src="audio/hihat.wav"></audio>
+          <p class="text">
+            <span class="text__key">s</span>
+            <span class="text__sound">hinat</span>
+          </p>
+        </div>
+        <div id="KeyD" class="key">
+          <audio src="audio/kick.wav"></audio>
+          <p class="text">
+            <span class="text__key">d</span>
+            <span class="text__sound">kick</span>
+          </p>
+        </div>
+        <div id="KeyF" class="key">
+          <audio src="audio/openhat.wav"></audio>
+          <p class="text">
+            <span class="text__key">f</span>
+            <span class="text__sound">openhat</span>
+          </p>
+        </div>
+        <div id="KeyG" class="key">
+          <audio src="audio/boom.wav"></audio>
+          <p class="text">
+            <span class="text__key">g</span>
+            <span class="text__sound">boom</span>
+          </p>
+        </div>
+        <div id="KeyH" class="key">
+          <audio src="audio/ride.wav"></audio>
+          <p class="text">
+            <span class="text__key">h</span>
+            <span class="text__sound">ride</span>
+          </p>
+        </div>
+        <div id="KeyJ" class="key">
+          <audio src="audio/snare.wav"></audio>
+          <p class="text">
+            <span class="text__key">j</span>
+            <span class="text__sound">snare</span>
+          </p>
+        </div>
+        <div id="KeyK" class="key">
+          <audio src="audio/tom.wav"></audio>
+          <p class="text">
+            <span class="text__key">k</span>
+            <span class="text__sound">tom</span>
+          </p>
+        </div>
+        <div id="KeyL" class="key">
+          <audio src="audio/tink.wav"></audio>
+          <p class="text">
+            <span class="text__key">l</span>
+            <span class="text__sound">tink</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="button generate-box">
+        Click to generate box with random colors
+      </button>
+      <button class="button generate-color">
+        Click to generate random colors
+      </button>
+    </div>
+
+    <div>
+      <div class="loading-animation">
+        <div class="lds-dual-ring"></div>
+      </div>
+      <div class="notification invisible">Scroll down to view content</div>
+      <div class="container">
+        <header class="header">
+          <div class="introduction">
+            <h1 class="cursor">Cursor Homework</h1>
+            <h2 class="homework-title">Working with the server</h2>
+          </div>
+          <div class="links">
+            <a href="https://swapi.dev/" class="button api-link">api</a>
+            <a
+              href="https://github.com/THeNarciSSist/cursor-homework/tree/master/12-cursor-homework"
+              class="button github-link"
+              >GitHub</a
+            >
+          </div>
+          <div class="mouse-animation">&nbsp;</div>
+        </header>
+        <main>
+          <section class="section-characters">
+            <ul class="characters"></ul>
+            <div class="form">
+              <form class="subform" name="subform" action="">
+                <span class="text"
+                  >Choose any film (Default: "The Empire Strikes Back")</span
+                >
+                <select class="select-film" name="filmnum" id="filmid">
+                  <option value="1">A New Hope</option>
+                  <option value="2">The Empire Strikes Back</option>
+                  <option value="3">Return of the Jedi</option>
+                  <option value="4">The Phantom Menace</option>
+                  <option value="5">Attack of the Clones</option>
+                  <option value="6">Revenge of the Sith</option>
+                </select>
+                <input
+                  class="submit-button"
+                  id="submit-button"
+                  type="button"
+                  name="submit"
+                  value="Submit"
+                />
+              </form>
+            </div>
+          </section>
+
+          <section class="section-planets">
+            <div class="buttons">
+              <span class="text show-planets"
+                >Click buttons to show list of planets</span
+              >
+              <button class="submit-button show">Show</button>
+              <button class="submit-button previous">Previous</button>
+              <button class="submit-button next">Next</button>
+            </div>
+            <ol class="planets-list"></ol>
+          </section>
+        </main>
+      </div>
+      <footer>
+        <div class="footer-info">Something like footer</div>
+      </footer>
+    </div>
+  </body>
+</html>
